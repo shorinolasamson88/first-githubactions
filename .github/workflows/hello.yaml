@@ -3,16 +3,16 @@ name: My first workflow
 
 on:
   push: 
-     branches: [ main ]
+    branches: [ main ]
 
 jobs:
   hello:
 
-      runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-      steps: 
-	- name: Saying Hello to Users
-	  run: echo "Hello World! Bigsam is here"
+    steps: 
+	    - name: Saying Hello to Users
+	      run: echo "Hello World, Bigsam is here!"
 
   
 
