@@ -1,19 +1,34 @@
-
-name: My first workflow
+name: My First Action
 
 on:
-  push: 
-    branches: [ main ]
+  push:
+    branch: [ main ]
 
 jobs:
   hello:
-
     runs-on: ubuntu-latest
 
-    steps: 
-	    - name: Saying Hello to Users
-	      run: echo "Hello World, Bigsam is here!"
+    steps:
+      - name: Say hello
+        run: echo "Hello World, Bigsam is here!"
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
