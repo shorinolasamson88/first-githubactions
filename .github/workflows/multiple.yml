@@ -34,18 +34,13 @@ jobs:
    - name: Checking repository information
      run: |
           tree -a
-          ls -la
-          git remote set-url origin https://github.com/shorinolasamson88/first-githubactions.git
+          ls -la       
           git status
           git log --oneline
-          git remote -v 
           touch new.txt 
           echo " Bigsam successfully write this text in the file " >> new.txt
-          git add new.txt 
-          git status
-          git commit -m "new.txt added"
-          git log --oneline 
-          git push origin main 
+          cat new.txt
+         
 
 
      
