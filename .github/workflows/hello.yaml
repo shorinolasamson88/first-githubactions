@@ -10,13 +10,14 @@ jobs:
 
     steps:
       - name: Say hello
-        run: echo "Hello World, Bigsam is here!"
-        run: whoami
-        run: date
-        run: pwd
-        run: hostname
-        run: cat /etc/os-release
-        run: lscpu
+        run: |
+          echo "Hello World, Bigsam is here!"
+          whoami
+          date
+          pwd
+          hostname
+          cat /etc/os-release
+          lscpu
 
 
 
