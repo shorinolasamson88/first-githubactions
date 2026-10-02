@@ -17,7 +17,7 @@ jobs:
           pwd
           date
           uname -a
-          hoatname
+          hostname
           df -h
           free -h
 
@@ -35,6 +35,9 @@ jobs:
      run: |
           tree -a
           ls -la
+          git config --global user.email "shorinolasamson88@gmail.com"
+          git config --global user.name "Shorinola Samson"
+          git remote set-url origin https://github.com/shorinolasamson88/first-githubactions.git
           git status
           git log --oneline
           git remote -v 
