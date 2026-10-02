@@ -18,5 +18,8 @@ jobs:
           date
           pwd
           git status
+          git log --oneline
+          touch .github/workflows/new.txt
+          ls -la .github/workflows/new.txt
           cat .github/workflows/test.yml 
           
