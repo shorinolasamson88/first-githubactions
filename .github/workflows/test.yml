@@ -15,5 +15,8 @@ jobs:
    - name: checking repository files and directories
      run: |
           ls -la
-          cat .github/workflows/test.yml
           date
+          pwd
+          git status
+          cat .github/workflows/test.yml 
+          
