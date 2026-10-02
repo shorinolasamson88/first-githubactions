@@ -1,0 +1,51 @@
+name: Multiple jobs workflow
+
+
+on:
+ push:
+  branches: [ main ]
+
+
+jobs:
+ linux_check:
+  runs-on: ubuntu-latest
+
+  steps:
+   - name: checking linux information
+     run: |
+          whoami
+          pwd
+          date
+          uname -a
+          hoatname
+          df -h
+          free -h
+
+
+
+jobs:
+ repository_check:
+  runs-on: ubuntu-latest
+
+  steps:
+   - name: Check out Repository 
+     uses: actions/checkout@v4
+
+   - name: Checking repository information
+     run: |
+          tree -a
+          ls -la
+          git status
+          git log --oneline
+          git remote -v 
+          touch new.txt 
+          echo " Bigsam successfully write this text in the file " >> new.txt
+          git add new.txt 
+          git status
+          git commit -m "new.txt added"
+          git log --oneline 
+          git push origin main 
+
+
+     
+  
