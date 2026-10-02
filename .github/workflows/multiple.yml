@@ -20,6 +20,10 @@ jobs:
           hostname
           df -h
           free -h
+          touch test-from-job1
+          echo "hello from job 1" >> test-from-job1
+          cat test-from-job1
+          
 
 
 
@@ -37,9 +41,10 @@ jobs:
           ls -la       
           git status
           git log --oneline
-          touch new.txt 
-          echo " Bigsam successfully write this text in the file " >> new.txt
-          cat new.txt
+          ls -l test-from-job1
+          cat test-from-job1
+          
+
          
 
 
