@@ -1,0 +1,19 @@
+name: My checkout test workflow
+
+on:
+ push:
+  branch: [ main ]
+
+jobs:
+ checkout test:
+  runs-on: ubuntu-latest
+
+  steps:
+   - name: checkout repository
+     uses: actions/checkout@v4
+
+   - name: checking repository files and directories
+     run: |
+          ls -la
+          whoami
+          date
